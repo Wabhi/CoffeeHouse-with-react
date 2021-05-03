@@ -1,0 +1,78 @@
+.signupScreen{
+    display: grid;
+    place-items:center;
+    gap:40px;
+}
+.signupScreen_header>a>img{
+    object-fit: contain;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 90px;
+    border-radius: 30%;
+}
+.signupScreen_header{
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06),
+    0 0 2px rgba(0, 0, 0, 0.07);
+    height: 101px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.signupScreen_heading{
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 800;
+    font-size: 28px;
+}
+.signupScreen_reward>h4{
+    color: rgba(0, 0, 0, 0.56);
+    text-align: center;
+    font-weight: 800;
+    font-size: 17px;
+    letter-spacing: 1.4;
+    margin-bottom: 20px;
+}
+.signupScreen_reward>p{
+   color: rgba(0, 0, 0, 0.56);
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.5;
+   max-width: 500px; 
+}
+.signupScreen_reward>p>a{
+    color:#90ee90;
+    text-decoration: underline;
+}
+.signupScreen_reward>p>a:hover{
+    color: #f56991;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+@media(max-width:425){
+    .signupScreen{
+        gap: 30px;
+    }
+    .signupScreen_heading{
+        margin-right: auto;
+        padding: 0px 28px;
+        font-size: 24px;
+    }
+    .signupScreen_reward>h4{
+        display: none;
+    }
+    .signupScreen_reward{
+        text-align: left;
+        padding: 0ppx 28px;
+    }
+    .signupScreen_reward>p{
+        font-size: 12px;
+    }
+}
+.signinScreen_visibilityIcon{
+    cursor: pointer;
+    color: gray;
+    position: absolute;
+    top:0;
+    right: 10%;
+    transform: translateY(80%);
+}

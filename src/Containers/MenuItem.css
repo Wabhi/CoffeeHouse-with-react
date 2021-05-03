@@ -1,0 +1,28 @@
+.menuItem{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    width: 280px;
+}
+.menuItem_image{
+    width: 120px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.menuItem>h4{
+    color: crimson;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+@media(max-width:768px){
+    .menuItem{
+        width: 240px;
+    }
+    .menuItem_image{
+        width: 80px;
+    }
+    .menuItem>h4{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,36 @@
+.accordion_header{
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  margin-bottom: 10px;
+}
+.accordion_header:first-of-type{
+    margin-top: 60px;
+}
+.accordion_header>a{
+  font-size: 21px;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 800;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.accordion_header>a:hover{
+    color: teal;
+}
+.accordion_section{
+    overflow: hidden;
+}
+@media (max-width: 425px) {
+    .accordion_header {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .accordion_header > a {
+      font-size: 16px;
+    }
+    .accordion_icon > .MuiSvgIcon-root {
+      font-size: 30px;
+    }
+  }
